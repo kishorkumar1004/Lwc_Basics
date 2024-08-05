@@ -1,0 +1,10 @@
+<template>
+    <lightning-card label='Pagination'>
+        <lightning-datatable key-field="id" columns={columns} data={InvdataArray} >
+            
+        </lightning-datatable>
+        <lightning-button label="previous" onclick={handlePrev}></lightning-button>
+        <lightning-button label="Next" onclick={handleNext}></lightning-button>
+        <p>{currentPage}/{TotalPages}</p>
+    </lightning-card>
+</template>
